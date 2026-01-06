@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(135deg, #e93c3ce3, #f0a00c, #f1c913);
+  }
+.cart-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+.btn-pay {
+    background-color: #e53935;
+    color: white;
+  }
