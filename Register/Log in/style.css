@@ -144,3 +144,28 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+
+.password-box {
+  position: relative;
+}
+
+.password-box .eye {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+/* GẠCH CHÉO */
+.password-box .eye.hide::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: #666;
+  top: 50%;
+  left: -2px;
+  transform: rotate(45deg);
+}

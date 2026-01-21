@@ -71,6 +71,10 @@
     }
 
     function pay() {
+      if (cart.length === 0) {
+        alert("Giỏ hàng trống!");
+        return;
+      }
       alert("✅ Thanh toán thành công!");
       localStorage.removeItem("cart");
       window.location.href = "menu.html";

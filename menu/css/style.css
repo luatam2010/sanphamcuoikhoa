@@ -123,3 +123,54 @@ footer {
   background-color: #e53935;
   color: white;
 }
+
+/* NỀN MỜ */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  z-index: 999;
+}
+
+/* POPUP Ở GIỮA */
+#popupFrame {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  height: 560px;
+  border: none;
+  border-radius: 12px;
+  display: none;
+  z-index: 1000;
+  background: white;
+}
+
+
+.type {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.information {
+    margin-bottom: -1px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #8b0000; /* đỏ đô */
+}
+
+.size {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #ff8c00; /* cam */
+    font-weight: bold;
+}
+
+.open-btn{
+  margin-top: 10px;
+  background-color: #e53935;
+  color: white;
+}

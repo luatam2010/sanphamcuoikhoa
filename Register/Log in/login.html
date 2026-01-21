@@ -4,14 +4,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title> Responsive Login Form </title>
+  <title>Login Form </title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="register/register.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <div class="container">
-    <div class="title">Registration</div>
+    <div class="title">Login</div>
     <div class="content">
       <form id="login-form">
         <div class="user-details">
@@ -23,14 +24,16 @@
             <span class="details">Email</span>
             <input type="text" name="email" placeholder="Enter your email" required>
           </div>
-          <div class="input-box">
+          <div class="input-box password-box">
             <span class="details">Password</span>
-            <input type="text" name="password" placeholder="Enter your password" required>
+            <input type="password" id="password" placeholder="Enter your password">
+            <span class="eye" id="eye" onclick="togglePassword()">👁</span>
           </div>
         </div>
         <div class="button">
           <input type="submit" value="Login">
         </div>
+        <a href="http://127.0.0.1:5502/Register/register.html">(*)No account yet?</a>
       </form>
     </div>
   </div>

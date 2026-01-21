@@ -1,0 +1,157 @@
+<!-- <!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Popup Pizza</title>
+    <link rel="stylesheet" href="css/addtocart.css">
+</head>
+
+<body>
+
+    <div class="popup-box">
+        <span class="close" onclick="parent.closePopup()">✖</span>
+
+        <h2 id="name"></h2>
+        <img id="img" width="100%">
+
+        <p>Chọn size</p>
+        <label><input type="radio" name="size" value="0" checked> S 
+                                                                  <p class="prize">160.000đ</p></label>
+        <label><input type="radio" name="size" value="240.000"> L   
+                                                               <p class="prize">240.000đ</p></label>
+
+        <p>Topping</p>
+        <label><input type="checkbox" value="50000"> Cheese
+                                                    </label>
+        <label><input type="checkbox" value="30000"> Sausages</label>
+        <label><input type="checkbox" value="50000"> Shrimp</label>
+        <label><input type="checkbox" value="50000"> Squid</label>
+        <label><input type="checkbox" value="50000"> Minced Beef</label>
+        <label><input type="checkbox" value="30000"> Pineapple</label>
+
+
+        <p>Số lượng</p>
+        <button onclick="changeQty(-1)">−</button>
+        <span id="qty">1</span>
+        <button onclick="changeQty(1)">+</button>
+
+        <h3>Tổng: <span id="total"></span> đ</h3>
+
+        <button onclick="addToCart()">THÊM VÀO GIỎ</button>
+    </div>
+
+    <script src="addtocart.js"></script>
+</body>
+
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Pizza Popup</title>
+<link rel="stylesheet" href="css/addtocart.css">
+</head>
+
+<body>
+
+<div class="popup-box">
+        <span class="close" onclick="parent.closePopup()">✖</span>
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>TERIYAKI CHICKEN</h2>
+            <p class="material">Chicken pizza with Mayo-Teriyaki sauce, mushrooms, pineapple & cheese.</p>
+
+            <img class="picture" style="height:300px;"
+                    src="https://api.pepperonis.com.vn//uploads/images/undefined-1253.jpg" alt="Pizza">
+
+
+             <!--QUANTITY -->
+            <div class="section">
+                <div class="section-title">Số lượng</div>
+                <div class="quantity">
+                    <button onclick="changeQty(-1)">-</button>
+                    <span id="qty">1</span>
+                    <button onclick="changeQty(1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-right">
+            <!--SIZE -->
+            <div class="section">
+                <div class="section-title">Chọn size</div>
+
+                <label class="size-option">
+                    <input type="radio" name="size" value="160000" checked>
+                    <div class="size-info">
+                        <span class="size-name">S</span>
+                        <span class="size-price">160.000đ</span>
+                    </div>
+                </label>
+
+                <label class="size-option">
+                    <input type="radio" name="size" value="240000">
+                    <div class="size-info">
+                        <span class="size-name">L</span>
+                        <span class="size-price">240.000đ</span>
+                    </div>
+                </label>
+            </div>
+
+            <!--TOPPING --> 
+            <div class="section">
+                <h3>Topping</h3>
+                <div class="topping-box">
+                    <label class="topping-option"><input type="checkbox" value="50000"> 
+                        <span class="topping-name">Cheese</span>
+                        <span class="topping-price">50.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="30000">
+                        <span class="topping-name">Sausage</span>
+                        <span class="topping-price">30.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="30000"> 
+                        <span class="topping-name">Mushroom</span>
+                        <span class="topping-price">30.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="30000"> 
+                        <span class="topping-name">Corn</span>
+                        <span class="topping-price">30.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="30000"> 
+                        <span class="topping-name">Onion</span>
+                        <span class="topping-price">30.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="50000"> 
+                        <span class="topping-name">Bacon</span>
+                        <span class="topping-price">50.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="50000"> 
+                        <span class="topping-name">Shrimp</span>
+                        <span class="topping-price">50.000đ</span>
+                    </label>
+                    <label class="topping-option"><input type="checkbox" value="30000">
+                        <span class="topping-name">Pineapple</span>
+                        <span class="topping-price">30.000đ</span>
+                    </label>
+                </div>
+            </div>
+
+            <!--TOTAL-->
+            <div class="total">Tổng: <span id="total">160.000</span>đ</div>
+
+            <button class="btn" onclick="addToCart(total)">ADD TO CART</button>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="./addtocart.js"></script>
+
+</body>
+</html> 

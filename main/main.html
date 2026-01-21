@@ -54,10 +54,21 @@
                             <a class="nav-link" href="http://127.0.0.1:5502/menu/menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#voucher">Voucher</a>
+                            <a class="nav-link" href="http://127.0.0.1:5502/voucher/voucher.html">Voucher</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://127.0.0.1:5502/Register/register.html">Register</a>
+                        </li>
+                        <li class="nav-item d-none" id="user-box">
+                            <a class="nav-link d-flex align-items-center" href="http://127.0.0.1:5502/Profile/profile.html">
+                                <img id="nav-avatar" src="https://i.imgur.com/1X6R0bU.png"
+                                    style="width:36px;height:36px;border-radius:50%;object-fit:cover;margin-right:8px;">
+                                <span id="nav-username"></span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item d-none" id="logout-box">
+                            <button class="btn btn-light btn-sm" onclick="logout()">Sign Out</button>
                         </li>
                     </ul>
                 </div>
@@ -97,9 +108,8 @@
         </nav>
     </nav>
 
-
+<script src="./nav.js"></script>
 </body>
-
 <footer>
     <div class="footer" id="footer">
         <footer>

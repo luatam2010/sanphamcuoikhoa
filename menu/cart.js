@@ -11,3 +11,4 @@ function addToCart(name, price) {
     localStorage.setItem("cart", JSON.stringify(cart));
     alert("Đã thêm vào giỏ hàng!");
 }
+
